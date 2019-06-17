@@ -14,6 +14,7 @@ import { RouterModule, Routes } from '@angular/router'
 
 
 const appRoutes: Routes = [
+  { path: '', redirectTo: '/landing-page', pathMatch: 'full'},
   { path: "landing-page", component: LandingPageComponent },
   { path: "home", component: HomeComponent },
   { path: "location1", component: Location1Component },

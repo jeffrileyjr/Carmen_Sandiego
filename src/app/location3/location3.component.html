@@ -8,14 +8,22 @@
       </p>
     </div>
 
-  <div *ngIf="clueNumber == 1" class="clue">
+  <div *ngIf="clueNumber === 1" class="clue">
     <p> I'm a clue. You should go where I lead</p>
-    <button>Search For More Clues <i class="material-icons">
+    <button (click)="nextClue()">Search For More Clues <i class="material-icons">
         fingerprint
         </i></button> <button (click)="flyOut()">Fly Out<i class="material-icons">
             airplanemode_active
             </i> </button>
   </div>
+  <div *ngIf="clueNumber === 2" class="clue">
+      <p> Hi, I'm clue #2, what up?</p>
+      <button (click)="nextClue()">Search For More Clues <i class="material-icons">
+          fingerprint
+          </i></button> <button (click)="flyOut()">Fly Out<i class="material-icons">
+              airplanemode_active
+              </i> </button>
+    </div>
 
   <div *ngIf="flight" class="flyOut">  
       <form action="">Fly Out

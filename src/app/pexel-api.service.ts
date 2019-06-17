@@ -8,7 +8,7 @@ import { HttpHeaders } from '@angular/common/http';
 export class PexelApiService {
 
   apiKey:string = "563492ad6f9170000100000128cb04362abc4b32b717e2c8e9125276";
-  location:string = "Paris"
+  // location:string = "Paris";
 
   httpOptions = {
     headers: new HttpHeaders({
