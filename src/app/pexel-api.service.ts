@@ -7,8 +7,9 @@ import { HttpHeaders } from '@angular/common/http';
 })
 export class PexelApiService {
 
-  apiKey:string = "563492ad6f9170000100000128cb04362abc4b32b717e2c8e9125276";
-  // location:string;
+  // apiKey:string = "563492ad6f9170000100000128cb04362abc4b32b717e2c8e9125276";
+  apiKey:string = "563492ad6f917000010000014a9669d68f174ec5af529706f09b0407";
+
 
   httpOptions = {
     headers: new HttpHeaders({

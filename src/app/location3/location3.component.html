@@ -32,17 +32,16 @@
           </div>
   </div>
 
-  <div *ngIf="flight" class="flyOut">  
-      <form action="">Fly Out
-        <!-- below calls on the variables declared for the next city, a fake-out city, and a wrong location -->
-      <input type="radio"> {{this.nextCity}}
-      <input type="radio"> {{this.redHerring}}
-      <input type="radio"> {{this.wrongLocation}}
-      <button>Fly Out!</button>
-      </form>
-      <button (click)="goBack()">Go Back</button>
+  <div *ngIf="flight" class="flyOut"> 
+    <div *ngFor="let location of locations"> 
+      <label for="{{location}}">
+        <input type="radio" id="{{location}}" name="nextCity" [value]="location" [(ngModel)]="selectedCity">
+        {{location}}
+      </label>
     </div>
-
-
+    <button (click)="selectLocation()">Fly Out</button>
 
   </div>
+  <div *ngIf="wrong" class="">
+      <p>You chose wrong, sucka!</p>
+    </div>
