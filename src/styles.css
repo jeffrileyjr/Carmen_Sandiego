@@ -114,8 +114,8 @@ p {
 
 .flyOut {
   background-color: lightgrey;
-
-/* .flyOut {
+}
+.flyOut {
   background-color: white;
 
   border-radius: 5px;
@@ -134,10 +134,10 @@ p {
   flex-direction: column;
   height: 10%;
   width: 40%;
-}
+
 
   margin-top: 200px;
-} */
+}
 
 
 .city {
@@ -263,6 +263,14 @@ button {
 
 
 @media only screen and (min-width: 1024px) {
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+    position: absolute;
+    top: 70%;
+  }
   .cluePopUp {
     /* height: 70px;
     width:400px; */
@@ -311,6 +319,33 @@ button {
     font-size: 1em;
     font-family: "Times New Roman", Times, serif;
   }
+  .clueDiv {
+    background-color: lightgrey;
+    border-radius: 5px;
+    height: 300px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .clueDiv img {
+    height: 200px;
+  }
+  .flyOut {
+    background-color: lightgrey;
+    border-radius: 5px;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    /* margin-top: 200px; */
+  }
+ 
+ 
 
   .clueOneScreen {
     width: 100%;
@@ -348,7 +383,7 @@ button {
   }
 
 
-  .clueDiv,
+  /* .clueDiv,
   .flyOut {
     background-color: white;
     opacity: 0.8;
@@ -361,7 +396,7 @@ button {
     flex-direction: column;
     font-family: "Roboto", sans-serif;
     margin-top: 200px;
-  }
+  } */
 
 
   .city {
