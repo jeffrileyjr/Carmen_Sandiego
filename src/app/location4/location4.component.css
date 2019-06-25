@@ -33,12 +33,14 @@ p {
   color: white;
 }
 
+
 img {
   display: flex;
   align-items: center;
 }
 
 #under {
+
   position: absolute;
 
 }

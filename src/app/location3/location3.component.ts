@@ -27,7 +27,7 @@ export class Location3Component implements OnInit {
   locations = [];
   wrong = false;
   selectedCity;
-  backgroundNoise = new Audio(`../../assets/${this.currentCity}.mp3`);
+  backgroundNoise;
 
 
   constructor(private userService: UserService, private clueService: ClueService, private pexelService: PexelApiService, private clockService: ClockService) { }

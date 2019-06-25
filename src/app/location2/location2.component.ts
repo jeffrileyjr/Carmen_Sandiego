@@ -22,12 +22,12 @@ userName: string;
   localClues;  // array to hold shuffled array of clues
   randomPhoto: number = Math.floor((Math.random() * 15));  // used to get a random index number for background photo
   redHerring; // a fake out location that is similar to the next city
-  wrongLocation;  // a randomw wrong option
+  wrongLocation;  // a random wrong option
   timeLeft;
   locations = [];
   wrong = false;
   selectedCity;
-  backgroundNoise = new Audio(`../../assets/${this.currentCity}.mp3`);
+  backgroundNoise;
 
 
   constructor(private userService: UserService, private clueService: ClueService, private pexelService: PexelApiService, private clockService: ClockService) { }

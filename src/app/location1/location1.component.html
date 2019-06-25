@@ -1,4 +1,5 @@
 <main>
+
   <header>
     <ul class="left">
       <li><strong>Finder</strong>
@@ -19,7 +20,7 @@
       <li>Window
 
       </li>
-      <li (click)="toggleHelp()">Help
+      <li>Help
 
       </li>
     </ul>
@@ -28,149 +29,156 @@
             <p class="clock"> {{ time | date: 'shortTime'}} </p>
             <p class="date">{{ time | date}} </p>
           </div>
-          <div class="thetime" *ngIf="clueNumber === 0 ">
-              <p class="clock"> {{ time | date: 'shortTime'}} </p>
-              <p class="date">{{ time | date}} </p>
-            </div>
-            <div class="thetime" *ngIf="clueNumber === -1 ">
-                <p class="clock"> {{ time | date: 'shortTime'}} </p>
-                <p class="date">{{ time | date}} </p>
-              </div>
-              <div class="thetime" *ngIf="clueNumber === 1 ">
-                  <p class="clock"> {{ time | date: 'shortTime'}} </p>
-                  <p class="date">{{ time | date}} </p>
-                </div>
-                <div class="thetime" *ngIf="clueNumber === 2 ">
-                    <p class="clock"> {{ time | date: 'shortTime'}} </p>
-                    <p class="date">{{ time | date}} </p>
-                  </div>
-      <li>Agent {{userName}}</li>
-    </ul>
-  </header>
- 
-
-  <!-- desktop top---------------------------------------------- -->
-
-  <section class="background-image" [ngStyle]="{'background-image': 'url('+ photoURL+')'}">
-      <div class="windowBox" *ngIf="help">
-          <div class="topbar">
-            <div class="macButtons">
-              <div class="close" (click)="toggleHelp()">
-                <a class="closebutton" ><span><strong>x</strong></span></a>
-                <!-- close button link -->
-              </div>
-              <div class="minimize">
-                <a class="minimizebutton" ><span><strong>&ndash;</strong></span></a>
-                <!-- minimize button link -->
-              </div>
-              <div class="zoom">
-                <a class="zoombutton" ><span><strong>+</strong></span></a>
-                <!-- zoom button link -->
-              </div>
-            </div>
-            Help
-            <!-- window title -->
-          </div>
-          <div class="content">
-            <h3>Need Help, {{userName}}? Here you go</h3>
-            <p class="directions">You must travel around the world to pursue and capture Carmen Sandiego. Each location has 3 clues that provide information about the culprit’s location. You can fly out to the next location at anytime by clicking on the airplane icon. Each clue uses an hour of time, flights take 3 hours, wrong flights will cost you 5 hours. If you need more clues, click on the fingerprint and you’ll receive the next clue. Your task is to piece together the clues, choose the correct location and arrest Carmen Sandiego before the 24 hour deadline.</p>
-            <!-- window content -->
-          </div>
-        </div>
-        <div class="iTunesImage" *ngIf="itunes" (click)="stopTheme()">
-        
-          </div>
-
-    <div class="clueOneScreen ">
-      <div *ngIf="clueNumber === -2" class="" (click)="showClue()">
-        <!-- <div class="thetime">
-          <p class="clock"> {{ time | date: 'shortTime'}} </p>
-          <p class="date">{{ time | date}} </p>
-        </div>
-        <i class="material-icons">fingerprint</i>
-
-        </div> -->
-        <div class="cluePopUp animated bounceInRight">
-        <img class="contact" src="http://www.iconarchive.com/download/i86753/ccard3dev/dynamic-yosemite/Contacts.ico" alt="">
-
-        <p class="clueText">Agent {{userName}}, you have a new clue. Click to view.</p>
-        <!-- <button (click)="showClue()">Let's Party!</button> -->
-        </div>
-      </div>
-
-      <div *ngFor="let clue of localClues; index as i" >
-        <div  *ngIf="i === this.clueNumber">
-          <!-- <div class="thetime">
-            <p class="clock"> {{ time | date: 'shortTime'}} </p>
-            <p class="date">{{ time | date}} </p>
-          </div> -->
-          
-          <div id="clueDiv" class="clueDiv">
-          <p *ngIf="clue.clues != undefined; else photo"> {{clue.clues}} </p>
-
-          <ng-template #photo>
-            <p *ngIf="clue.photo != undefined; else flag" class="flagClue"> She dropped this photo: <img class="droppedPic" src="{{clue.photo}}" alt="">
-            </p>
-          </ng-template>
-          <ng-template #flag>
-            <p class="flagClue"> She dropped this flag: <img class="flag" src="https://www.countryflags.io/{{clue.flag}}/shiny/64.png"> </p>
-          </ng-template>
-          <div class="buttons">
-            <button class="finger" *ngIf="this.clueNumber < 2" (click)="nextClue()"><i
-                class="material-icons">fingerprint</i></button>
-            <button class="plane" (click)="flyOut()"><i class="material-icons">airplanemode_active</i> </button>
-          </div>
-        </div>
-        </div>
-      </div>
-
-
-      <div *ngIf="flight" class="flyOut">
-          <!-- <div class="thetime">
+<!--           <div class="thetime" *ngIf="clueNumber === 0 ">
               <p class="clock"> {{ time | date: 'shortTime'}} </p>
               <p class="date">{{ time | date}} </p>
             </div> -->
-            <p class="city">Choose a city</p>
-        <div *ngFor="let location of locations">
-          <label for="{{location}}">
-            <input type="radio" id="{{location}}" name="nextCity" [value]="location" [(ngModel)]="selectedCity">
-            {{location}}
-          </label>
-        </div>
-        <div class="flyButtons">
-          <button (click)="goBack()">Return to clue</button>
-          <button (click)="selectLocation(); stopNoise()">Fly Out</button>
-        </div>
-      </div>
+    
+            <div class="thetime" *ngIf="clueNumber === 0 ">
+                <p class="clock"> {{ time | date: 'shortTime'}} </p>
+                <p class="date">{{ time | date}} </p>
+              </div>
+              <div class="thetime" *ngIf="clueNumber === -1 ">
+                  <p class="clock"> {{ time | date: 'shortTime'}} </p>
+                  <p class="date">{{ time | date}} </p>
+                </div>
+                <div class="thetime" *ngIf="clueNumber === 1 ">
+                    <p class="clock"> {{ time | date: 'shortTime'}} </p>
+                    <p class="date">{{ time | date}} </p>
+                  </div>
 
-      <div *ngIf="wrong" class="wrong">
-        <h2>Sorry, there's no sign of her here!</h2>
-        <button (click)="goBackAirport()">Try Again!</button>
+                  <div class="thetime" *ngIf="clueNumber === 2 ">
+                      <p class="clock"> {{ time | date: 'shortTime'}} </p>
+                      <p class="date">{{ time | date}} </p>
+                    </div>
+        <li>Agent {{userName}}</li>
+      </ul>
+    </header>
+   
+  
+    <!-- desktop top---------------------------------------------- -->
+  
+    <section class="background-image" [ngStyle]="{'background-image': 'url('+ photoURL+')'}">
+        <div class="windowBox" *ngIf="help">
+            <div class="topbar">
+              <div class="macButtons">
+                <div class="close" (click)="toggleHelp()">
+                  <a class="closebutton" ><span><strong>x</strong></span></a>
+                  <!-- close button link -->
+                </div>
+                <div class="minimize">
+                  <a class="minimizebutton" ><span><strong>&ndash;</strong></span></a>
+                  <!-- minimize button link -->
+                </div>
+                <div class="zoom">
+                  <a class="zoombutton" ><span><strong>+</strong></span></a>
+                  <!-- zoom button link -->
+                </div>
+              </div>
+              Help
+              <!-- window title -->
+            </div>
+            <div class="content">
+              <h3>Need Help, {{userName}}? Here you go</h3>
+              <p class="directions">You must travel around the world to pursue and capture Carmen Sandiego. Each location has 3 clues that provide information about the culprit’s location. You can fly out to the next location at anytime by clicking on the airplane icon. Each clue uses an hour of time, flights take 3 hours, wrong flights will cost you 5 hours. If you need more clues, click on the fingerprint and you’ll receive the next clue. Your task is to piece together the clues, choose the correct location and arrest Carmen Sandiego before the 24 hour deadline.</p>
+              <!-- window content -->
+            </div>
+          </div>
+          <div class="iTunesImage" *ngIf="itunes" (click)="stopTheme()">
+          
+            </div>
+  
+      <div class="clueOneScreen ">
+        <div *ngIf="clueNumber === -2" class="" (click)="showClue()">
+          <div class="thetime" class="mobileTime">
+            <p class="clock"> {{ time | date: 'shortTime'}} </p>
+            <p class="date">{{ time | date}} </p>
+          </div>
+          <!-- <i class="material-icons">fingerprint</i>
+  
+          </div> --> 
+          <div class="cluePopUp animated bounceInRight">
+          <img class="contact" src="http://www.iconarchive.com/download/i86753/ccard3dev/dynamic-yosemite/Contacts.ico" alt="">
+  
+          <p class="clueText">Agent {{userName}}, you have a new clue. Click to view.</p>
+          <!-- <button (click)="showClue()">Let's Party!</button> -->
+          </div>
+        </div>
+  
+        <div *ngFor="let clue of localClues; index as i" >
+          <div  *ngIf="i === this.clueNumber">
+            <div class="thetime" class="mobileTime">
+              <p class="clock"> {{ time | date: 'shortTime'}} </p>
+              <p class="date">{{ time | date}} </p>
+            </div>
+            
+            <div id="clueDiv" class="clueDiv">
+            <p class="clueWord" *ngIf="clue.clues != undefined; else photo"> {{clue.clues}} </p>
+  
+            <ng-template #photo>
+              <p *ngIf="clue.photo != undefined; else flag" class="flagClue"> She dropped this photo: <img class="droppedPic" src="{{clue.photo}}" alt="">
+              </p>
+            </ng-template>
+            <ng-template #flag>
+              <p class="flagClue"> She dropped this flag: <img class="flag" src="https://www.countryflags.io/{{clue.flag}}/shiny/64.png"> </p>
+            </ng-template>
+            <div class="buttons">
+              <button class="finger" *ngIf="this.clueNumber < 2" (click)="nextClue()"><i
+                  class="material-icons">fingerprint</i></button>
+              <button class="plane" (click)="flyOut()"><i class="material-icons">airplanemode_active</i> </button>
+            </div>
+          </div>
+          </div>
+        </div>
+  
+  
+        <div *ngIf="flight" class="flyOut">
+            <div class="thetime" class="mobileTime">
+                <p class="clock"> {{ time | date: 'shortTime'}} </p>
+                <p class="date">{{ time | date}} </p>
+              </div>
+              <p class="city">Choose a city</p>
+          <div *ngFor="let location of locations">
+            <label for="{{location}}">
+              <input type="radio" id="{{location}}" name="nextCity" [value]="location" [(ngModel)]="selectedCity">
+              {{location}}
+            </label>
+          </div>
+          <div class="flyButtons">
+            <button (click)="goBack()">Return to clue</button>
+            <button (click)="selectLocation(); stopNoise()">Fly Out</button>
+          </div>
+        </div>
+  
+        <div *ngIf="wrong" class="wrong">
+          <h2>Sorry, there's no sign of her here!</h2>
+          <button (click)="goBackAirport()">Try Again!</button>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- desktop bottom------------------------------------------------ -->
-  <footer>
-    <ul>
-      <li data-title="Finder"><img data-title="Finder"
-          src="https://harnerdesigns.com/wp-content/uploads/2018/05/finder.png"></li>
-      <li data-title="Chrome"><img
-          src="https://harnerdesigns.com/wp-content/uploads/2018/05/Google_Chrome_icon_2011.png"></li>
-      <li data-title="iTunes" class="closed" id="iTunes" (click)="playTheme(); toggleItunes()"> <img
-          src="https://harnerdesigns.com/wp-content/uploads/2018/05/iTunes-logo.svg"></li>
-      <li data-title="Photoshop"><img
-          src="https://harnerdesigns.com/wp-content/uploads/2018/05/Adobe_Photoshop_CS6_icon.png"></li>
-      <li data-title="Clues"><img
-          src="../../assets/fingerprint.png" (click)="showClue()" class ="clueIcon "> </li>
-      <!-- <li data-title="LinkedIn"><a href="https://www.linkedin.com/in/james-g-bosley/"><img
-            src=http://www.hr.ubc.ca/hr-networks/files/2014/04/linkedin-300x300.png> </a> </li>
-             -->
-             <li
-            data-title="System&nbsp;Preferences"><img
-            src="https://harnerdesigns.com/wp-content/uploads/2018/05/20140418_System_Preferences.png">
-      </li>
-      <li data-title="Trash"><img src="https://harnerdesigns.com/wp-content/uploads/2018/05/512-TrashIcon-macosx1.png">
-      </li>
-    </ul>
-  </footer>
-</main>
+    </section>
+    <!-- desktop bottom------------------------------------------------ -->
+    <footer>
+      <ul>
+        <li data-title="Finder"><img data-title="Finder"
+            src="https://harnerdesigns.com/wp-content/uploads/2018/05/finder.png"></li>
+        <li data-title="Chrome"><img
+            src="https://harnerdesigns.com/wp-content/uploads/2018/05/Google_Chrome_icon_2011.png"></li>
+        <li data-title="iTunes" class="closed" id="iTunes" (click)="playTheme(); toggleItunes()"> <img
+            src="https://harnerdesigns.com/wp-content/uploads/2018/05/iTunes-logo.svg"></li>
+        <li data-title="Photoshop"><img
+            src="https://harnerdesigns.com/wp-content/uploads/2018/05/Adobe_Photoshop_CS6_icon.png"></li>
+        <li data-title="Clues"><img
+            src="../../assets/fingerprint.png" (click)="showClue()" class ="clueIcon "> </li>
+        <!-- <li data-title="LinkedIn"><a href="https://www.linkedin.com/in/james-g-bosley/"><img
+              src=http://www.hr.ubc.ca/hr-networks/files/2014/04/linkedin-300x300.png> </a> </li>
+               -->
+               <li
+              data-title="System&nbsp;Preferences"><img
+              src="https://harnerdesigns.com/wp-content/uploads/2018/05/20140418_System_Preferences.png">
+        </li>
+        <li data-title="Trash"><img src="https://harnerdesigns.com/wp-content/uploads/2018/05/512-TrashIcon-macosx1.png">
+        </li>
+      </ul>
+    </footer>
+  </main>
+

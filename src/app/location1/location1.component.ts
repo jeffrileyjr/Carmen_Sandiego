@@ -27,7 +27,7 @@ export class Location1Component implements OnInit { //defines the logic
   locations = [];
   wrong = false;
   selectedCity;
-  backgroundNoise = new Audio(`../../assets/${this.currentCity}.mp3`);
+  backgroundNoise;
   help = false;
   itunes = false;
   theme = new Audio('../../assets/Theme.mp3');
