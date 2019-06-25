@@ -115,7 +115,7 @@ p {
 .flyOut {
   background-color: lightgrey;
 }
-.flyOut {
+/* .flyOut {
   background-color: white;
 
   border-radius: 5px;
@@ -133,11 +133,9 @@ p {
   justify-content: space-between;
   flex-direction: column;
   height: 10%;
-  width: 40%;
-
-
-  margin-top: 200px;
-}
+  width: 40%
+ margin-top: 200px;
+} */
 
 
 .city {
