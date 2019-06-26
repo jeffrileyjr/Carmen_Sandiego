@@ -240,7 +240,7 @@ button {
 }
 @media only screen and (min-width: 1024px) {
   .messageContainer {
-    font-family: helvetica;
+    font-family: "Roboto", sans-serif;
     background-color: white;
     border-radius: 5px;
     width: 400px;
