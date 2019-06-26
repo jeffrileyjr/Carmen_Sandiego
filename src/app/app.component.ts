@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import {RouterOutlet } from '@angular/router';
-import { fader } from './route-animations';
+import { slider , fader, transformer } from './route-animations';
 // import { PexelApiService } from './pexel-api.service'
 
 @Component({
   selector: 'app-root',
   animations: [ // <-- add your animations here
-    fader
-    // slider
+    // fader
+    slider
     // transformer
   ],
   templateUrl: './app.component.html',
