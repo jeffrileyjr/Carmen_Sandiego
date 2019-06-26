@@ -30,17 +30,17 @@ export class ClueService {
   constructor(private http: HttpClient, private router: Router, private pexelService: PexelApiService) { }
 
   getScores() {
-    return this.http.get('http://localhost:3000/scores', { responseType: 'json'});
+    return this.http.get('/scores', { responseType: 'json'});
   }
   addScore(userAndScore) {
     console.log(userAndScore);
-    return this.http.post('http://localhost:3000/scores', userAndScore, { responseType: 'json'});
+    return this.http.post('/scores', userAndScore, { responseType: 'json'});
   }
   getClues(nextCity) {
-    return this.http.get(`http://localhost:3000/clues/${nextCity}`, { responseType: 'json'});
+    return this.http.get(`/clues/${nextCity}`, { responseType: 'json'});
   }
   getStolenGoods(startingCity){
-    return this.http.get(`http://localhost:3000/stolenGoods/${startingCity}`, { responseType: 'json'});
+    return this.http.get(`/stolenGoods/${startingCity}`, { responseType: 'json'});
   }
   rightChoice() {
     this.id++;
