@@ -24,7 +24,7 @@ body {
   width: 90%;
   height: 90%;
   font-family: 'Roboto Slab', serif;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -50,5 +50,6 @@ button {
 .email {
   width: 50%;
   height: 50%;
+  font-size: 20px;
 }
 }
