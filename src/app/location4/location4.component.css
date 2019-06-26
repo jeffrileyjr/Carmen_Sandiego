@@ -5,65 +5,78 @@ body {
   height: 100vh;
   width: 100vw;
 }
+.captured {
+  font-size: 40px;
+  margin-top: 0px;
+  width: 90%;
+}
+.images {
+  display:none;
+}
 .page {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
 }
-.captured {
-  font-size: 30px;
-  font-family: "Bangers", cursive;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+.captured{
+font-size: 20px;
+font-family: "Bangers", cursive;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
 }
-.images {
-  margin-bottom: 50px;
+a {
+  color: grey;
+  text-decoration: none;
 }
 p {
   margin: 5px;
   color: white;
 }
+button {
+font-family: 'Roboto Slab', serif;
+font-size: 10px;
+height: 15%;
+width: 33%;
+border-radius: 5px;
+margin-top: 2%;
+opacity: 0.7;
+background-color: white;
+}
+@media only screen and (min-width: 1024px) { 
+.page {
+  flex-direction: row-reverse;
+  }
+.captured {
+  font-size: 40px;
+  margin-left: 40px;
+}
+.images {
+  margin-bottom: 50px;
+}
 img {
   display: flex;
   align-items: center;
 }
+.images {
+  display: block;
+}
 #under {
-  position: absolute;
+  left: 15%;
+  top: 28%
 }
 #top {
-  width: 450px;
-}
-button {
-  font-family: 'Roboto Slab', serif;
-  font-size: 15px;
-  height: 15%;
-  width: 50%;
-  border-radius: 5px;
-  margin-top: 2%;
-  opacity: 0.7;
-  background-color: white;
+  left: 18%;
+  top: 23%;
+  position: absolute;
+  width: 29%;
 }
 button:hover {
   background-color: black;
   color: lightgrey;
- }
-@media only screen and (min-width: 1024px) { 
-  .captured {
-    font-size: 40px;
-    margin-left: 80%;
-    margin-top: 0px;
-  }
-  #under {
-    left: 15%;
-    top: 28%
-  }
-  #top {
-    left: 15%;
-    top: 28%;
-    position: absolute;
-  }
+  border: 1px solid black;
+}
 }
