@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterOutlet } from '@angular/router';
-import { slider , fader, transformer } from './route-animations';
+import { slider } from './route-animations';
 // import { PexelApiService } from './pexel-api.service'
 
 @Component({
