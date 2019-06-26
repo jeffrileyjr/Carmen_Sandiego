@@ -1,24 +1,23 @@
 <body>
-  <div>
-    <h1>Top Gumshoes</h1>
-   </div>
-   
-   <img src=“../assets/Carmen_Sandiego.png” alt=“”>
-   
-    <section class=“topTen”>
-      <table>
-      <div class=“title”>
-        <th>Rank</th>
-        <th>Name</th>
-        <th>Score</th>
-      </div>
-        <div class=“scores” *ngFor=“let score of topTen; index as i”>
-        <td> {{i+1}} </td>
-        <td> {{score.username}} </td>
-        <td> {{score.score}}  </td>
-      </div>
-   
-      </table>
-      <button type="button" class="beginNewCase" routerLink="/landing-page" routerLinkActive="active">Play Again</button>
+<div>
+  <h1>Top Gumshoes</h1>
+</div>
+
+  <section class="topTen">
+    <table> 
+      <div>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Score</th>
+    </div>
+    <div class="scores" *ngFor="let score of topTen; index as i">
+      <td> {{i+1}} </td>
+      <td> {{score.username}} </td>
+      <td> {{score.score}}  </td>
+    </div>
+
+    </table>
+ <button type="button" class="beginNewCase" routerLink="/landing-page" routerLinkActive="active">
+   Play Again</button>
   </section>
 </body>
