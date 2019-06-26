@@ -31,11 +31,7 @@
   animation-duration: 1s;
   animation-fill-mode: both;
 }
-button:hover {
-  background-color: black;
-  color: lightgrey;
-  border: 1px solid black;
-}
+
 .contact {
   width: 40px;
   height: 40px;
@@ -82,6 +78,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .clueDiv {
+  z-index: 7;
   background-color: lightgrey;
   border-radius: 5px;
   height: 300px;
@@ -244,7 +241,10 @@ button {
   font-family: "Roboto", sans-serif;
   background-color: white;
   border-radius: 5px;
-  width: 400px;
+  width: 350px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,6 +349,11 @@ button {
   display: none;
 } */
 @media only screen and (min-width: 1024px) {
+  button:hover {
+    background-color: black;
+    color: lightgrey;
+    border: 1px solid black;
+  }
   .messageContainer {
     font-family: "Roboto", sans-serif;
     background-color: white;
