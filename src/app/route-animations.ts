@@ -18,14 +18,14 @@ export const fader =
         style({
           position: 'absolute',
           left: 0,
-          width: '90%',
-          opacity: 0,
+          width: '100%',
+          opacity: 0.5,
           transform: 'scale(0) translateY(100%)',
         }),
       ]),
       // Animate the new page in
       query(':enter', [
-        animate('700ms ease', style({ opacity: 1, transform: 'scale(1) translateY(0)' })),
+        animate('500ms ease', style({ opacity: 1, transform: 'scale(1) translateY(0)' })),
       ])
     ]),
 ]);

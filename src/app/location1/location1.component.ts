@@ -28,7 +28,6 @@ export class Location1Component implements OnInit { //defines the logic
   wrong = false;
   selectedCity;
   backgroundNoise;
-  help = false;
   itunes = false;
   theme = new Audio('../../assets/Theme.mp3');
 
@@ -45,8 +44,8 @@ export class Location1Component implements OnInit { //defines the logic
     this.itunes = !this.itunes;
     this.theme.pause();
   }
-  toggleHelp(){
-    this.help = !this.help;
+  toggleItunes(){
+    this.itunes = !this.itunes;
   }
   // method that increases clueNumber so we can show the next clue
   showClue() {
