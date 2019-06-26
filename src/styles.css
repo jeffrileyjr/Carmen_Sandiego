@@ -243,9 +243,10 @@ button {
   background-color: white;
   border-radius: 5px;
   width: 100%;
-  position: relative;
-  left: 49%;
-  /* transform: translateX(-50%); */
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
