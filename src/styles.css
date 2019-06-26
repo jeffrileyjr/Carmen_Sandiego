@@ -58,6 +58,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto", sans-serif;
 }
 .cluePopUp {
   animation-delay: 2s;
@@ -172,6 +173,7 @@ button {
   flex-direction: column;
   top: 10%;
   left: 50%;
+  width: 90%;
   transform: translateX(-50%);
 }
 .wrong {

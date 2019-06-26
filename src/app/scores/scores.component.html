@@ -1,28 +1,26 @@
-<link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet" />
 <body>
-  
+ <div>
+ <h1>Top Gumshoes</h1>
+</div>
 
-  <main> 
-<h1>Top Ten</h1>
+<img src=“../assets/Carmen_Sandiego.png” alt=“”>
 
-  <section class="topTen">
-    <table> 
-      <tr>
-      <th>Rank</th>
-      <th>Name</th>
-      <th>Score</th>
-    </tr>
-    <tr *ngFor="let score of topTen; index as i">
-      <td> {{i+1}} </td>
-      <td> {{score.username}} </td>
-      <td> {{score.score}}  </td>
-    </tr>
+ <section class=“topTen”>
+   <table>
+   <div class=“title”>
+     <th>Rank</th>
+     <th>Name</th>
+     <th>Score</th>
+   </div>
+     <div class=“scores” *ngFor=“let score of topTen; index as i”>
+     <td> {{i+1}} </td>
+     <td> {{score.username}} </td>
+     <td> {{score.score}}  </td>
+   </div>
 
-    </table>
- <button type="button" class="beginNewCase" routerLink="/landing-page" routerLinkActive="active">
-   Return to Office</button>
-  </section>
-</main>
+   </table>
+ <button type=“button” class=“beginNewCase” routerLink=“/landing-page” routerLinkActive=“active”>
+   Play Again</button>
+ </section>
 
-<a href="./">Play Again</a>
 </body>
