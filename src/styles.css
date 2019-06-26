@@ -241,10 +241,10 @@ button {
   font-family: "Roboto", sans-serif;
   background-color: white;
   border-radius: 5px;
-  width: 350px;
+  width: 100%;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
   display: flex;
   justify-content: center;
   align-items: center;
