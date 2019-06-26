@@ -38,8 +38,8 @@ export const slider =
     transition('isLeft => *', slideTo('right') )
   ]);
 
-export function slideTo(direction) {
-  const optional = { optional: true };
+function slideTo(direction) {
+  // const optional = { optional: true };
   return [
     query(':enter, :leave', [
       style({
@@ -48,14 +48,14 @@ export function slideTo(direction) {
         [direction]: 0,
         width: '100%'
       })
-    ], optional),
+    ]),
     query(':enter', [
       style({ [direction]: '-100%'})
     ]),
     group([
       query(':leave', [
         animate('800ms ease', style({ [direction]: '100%'}))
-      ], optional),
+      ]),
       query(':enter', [
         animate('800ms ease', style({ [direction]: '0%'}))
       ])
