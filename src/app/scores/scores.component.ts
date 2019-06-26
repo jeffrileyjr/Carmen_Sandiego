@@ -16,6 +16,7 @@ export class ScoresComponent implements OnInit {
   ngOnInit() {
     this.clueService.getScores().subscribe(response => {
       this.topTen = response;
+      console.log(this.topTen);
      });
 
   }
