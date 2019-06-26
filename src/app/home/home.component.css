@@ -26,11 +26,12 @@ body {
   font-family: 'Roboto Slab', serif;
   font-size: 20px;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 button {
   font-family: 'Bangers', cursive;
   font-size: 20px;
-  height:5%;
+  height:8%;
   width: 35%;
   border-radius: 8px;
   text-align: center;
