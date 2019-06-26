@@ -1,29 +1,69 @@
-
 body {
   background: url(https://i2.wp.com/www.kalusalonandspa.com/wp-content/uploads/2017/01/black-brick-background-kalu-salon-black-friday-sales-web.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
-  width: 100vw
-}
-
-button {
+  width: 100vw;
+  font-family: ‘Bangers’,
+    cursive;
+ }
+ 
+ button {
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: lightgrey;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 5%;
-  height: 5%;
-  font-family: 'Bangers', cursive;
-}
-h1{
-    color:Blue;
-    display: flex;
-    font-size: 50px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5px;
-}
+  width: 15%;
+  height: 10%;
+ }
+ 
+ h1 {
+  color: Blue;
+  display: block;
+  font-size: 50px;
+  margin-bottom: 5px;
+ top:10%
+ }
+ 
+ img {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ;
+ }
+ 
+ .scores {
+  border-radius: 10%;
+  height: 5vh;
+  width: 30vw;
+  margin: 15px;
+  display: inherit;
+ }
+ 
+ 
+ td {
+  height: 5vh;
+  width: 5vw;
+  color: rgb(238, 223, 53);
+ font-size: x-large;
+ }
+ th {
+  color: red;
+  font-size: xx-large;
+ }
+ .scores {
+  border: 3px solid red;
+  border-radius: 10%;
+  height: 5vh;
+  width: 30vw;
+  margin: 15px;
+  display: inherit;
+  float: left;
+ }

@@ -64,7 +64,7 @@ body {
   background-color: lightgrey;
   border-radius: 5px;
   height: 70px;
-  width: 400px;
+  width: 350px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -84,7 +84,7 @@ body {
   background-color: lightgrey;
   border-radius: 5px;
   height: 300px;
-  width: 400px;
+  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,8 +97,8 @@ body {
 .flyOut {
   background-color: lightgrey;
   border-radius: 5px;
-  height: 400px;
-  width: 450px;
+  height: 300px;
+  width: 350px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -238,6 +238,10 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+/* .messageContainer, .chat, .messages, .message, .hers, .mine {
+  display: none;
+} */
 @media only screen and (min-width: 1024px) {
   .messageContainer {
     font-family: "Roboto", sans-serif;
