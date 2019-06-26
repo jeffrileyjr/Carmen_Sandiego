@@ -28,10 +28,24 @@ userName: string;
   wrong = false;
   selectedCity;
   backgroundNoise;
+  itunes = false;
+  theme = new Audio('../../assets/Theme.mp3');
   carmenText = false;
 
 
   constructor(private userService: UserService, private clueService: ClueService, private pexelService: PexelApiService, private clockService: ClockService) { }
+  playTheme(){
+    this.itunes = !this.itunes;
+    this.theme = new Audio('../../assets/Theme.mp3');
+    this.theme.play();
+  }
+  stopTheme() {
+    this.itunes = !this.itunes;
+    this.theme.pause();
+  }
+  toggleItunes(){
+    this.itunes = !this.itunes;
+  }
   showCarmenText() {
     this.clueNumber++;
     this.carmenText = !this.carmenText;
