@@ -126,10 +126,7 @@ body {
   flex-direction: column;
   border: none;
 }
-.flyButtons button:hover {
-  background-color: black;
-  color: lightgrey;
-}
+
 .city {
   font-size: 25px;
   margin-bottom: 0px;
@@ -351,6 +348,10 @@ button {
   display: none;
 } */
 @media only screen and (min-width: 1024px) {
+  .flyButtons button:hover {
+    background-color: black;
+    color: lightgrey;
+  }
   button:hover {
     background-color: black;
     color: lightgrey;
@@ -361,6 +362,7 @@ button {
     background-color: white;
     border-radius: 5px;
     width: 400px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
