@@ -38,7 +38,7 @@ export const slider =
     transition('isLeft => *', slideTo('right') )
   ]);
 
-function slideTo(direction) {
+export function slideTo(direction) {
   const optional = { optional: true };
   return [
     query(':enter, :leave', [
@@ -68,7 +68,6 @@ function slideTo(direction) {
   ];
 }
 
-export {slideTo}
 // export const transformer =
 //   trigger('routeAnimations', [
 //     transition('* => isLeft', transformTo({ x: -100, y: -100, rotate: -720 }) ),
