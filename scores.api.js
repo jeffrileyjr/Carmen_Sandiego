@@ -8,11 +8,11 @@ function topTen(res) {
 }
 
 
-scores.get("/scores", (req, res) => {
+scores.get("/thescores", (req, res) => {
   topTen(res);
 });
 
-scores.post("/scores", (req, res) => {
+scores.post("/thescores", (req, res) => {
   pool.query("INSERT INTO scores (username, score) VALUES ($1::text, $2::smallint)", [req.body.username, req.body.score]).then(() => {
    });
  });
