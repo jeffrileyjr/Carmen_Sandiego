@@ -30,11 +30,11 @@ export class ClueService {
   constructor(private http: HttpClient, private router: Router, private pexelService: PexelApiService) { }
 
   getScores() {
-    return this.http.get('/scores', { responseType: 'json'});
+    return this.http.get('/thescores', { responseType: 'json'});
   }
   addScore(userAndScore) {
     console.log(userAndScore);
-    return this.http.post('/scores', userAndScore, { responseType: 'json'});
+    return this.http.post('/thescores', userAndScore, { responseType: 'json'});
   }
   getClues(nextCity) {
     return this.http.get(`/clues/${nextCity}`, { responseType: 'json'});
