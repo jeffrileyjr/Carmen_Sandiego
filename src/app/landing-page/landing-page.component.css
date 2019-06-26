@@ -17,8 +17,8 @@ flex-direction: column;
 text-align: center;
 }
 img {
-  height: 500px;
-  width: 500px;
+  height: 250px;
+  width: 250px;
 }
 button {
   font-family: 'Roboto', sans-serif;
@@ -94,6 +94,10 @@ input {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media only screen and (min-width: 1024px) {
+  img {
+    height: 500px;
+    width: 500px;
+  }
 .newCase {
   font-family: 'Bangers', cursive;
   font-size: 25px;

@@ -4,7 +4,7 @@ import { ClueService } from '../clue.service';
 
 
 @Component({
-  selector: 'app-scores',
+  selector: 'scores',
   templateUrl: './scores.component.html',
   styleUrls: ['./scores.component.css']
 })
