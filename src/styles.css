@@ -1,3 +1,147 @@
+.messageContainer {
+  font-family: helvetica;
+  background-color: white;
+  border-radius: 5px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.chat {
+  width: 250px;
+  border: solid 1px #EEE;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.messages {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.hers {
+  align-items: flex-start;
+}
+
+.hers .message {
+  margin-right: 25%;
+  background-color: #eee;
+  position: relative;
+}
+
+.hers .message.last:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: -7px;
+  height: 20px;
+  width: 20px;
+  background: #eee;
+  border-bottom-right-radius: 15px;
+}
+.hers .message.last:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: -10px;
+  width: 10px;
+  height: 20px;
+  background: white;
+  border-bottom-right-radius: 10px;
+}
+.mine {
+  align-items: flex-end;
+}
+
+.mine .message {
+  color: white;
+  margin-left: 25%;
+  background: linear-gradient(to bottom, #00D0EA 0%, #0085D1 100%);
+  background-attachment: fixed;
+  position: relative;
+}
+
+.mine .message.last:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: -8px;
+  height: 20px;
+  width: 20px;
+  background: linear-gradient(to bottom, #00D0EA 0%, #0085D1 100%);
+  background-attachment: fixed;
+  border-bottom-left-radius: 15px;
+}
+
+.mine .message.last:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: -10px;
+  width: 10px;
+  height: 20px;
+  background: white;
+  border-bottom-left-radius: 10px;
+}
+@keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInRight {
+ animation-name: bounceInRight;
+}
+.animated {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
 .contact {
   width: 40px;
   height: 40px;
@@ -25,53 +169,19 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-
-  @keyframes bounceInRight {
-    from,
-    60%,
-    75%,
-    90%,
-    to {
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-  
-    from {
-      opacity: 0;
-      transform: translate3d(3000px, 0, 0);
-    }
-  
-    60% {
-      opacity: 1;
-      transform: translate3d(-25px, 0, 0);
-    }
-  
-    75% {
-      transform: translate3d(10px, 0, 0);
-    }
-  
-    90% {
-      transform: translate3d(-5px, 0, 0);
-    }
-  
-    to {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-  .bounceInRight {
-    animation-name: bounceInRight;
-  }
-  .animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-  }
+/* 
+p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+} */
 
 
 
 .cluePopUp {
-  animation-delay: 1.5s;
+  animation-delay: 2s;
   background-color: lightgrey;
+  opacity: 0.9;
   border-radius: 5px;
   height: 70px;
   width: 400px;
@@ -79,7 +189,10 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  /* margin-top: 6px;
+  margin-right: 12px; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
 
 .clueOneScreen {
@@ -92,8 +205,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-
-.clueDiv, .flyOut {
+.clueDiv {
   background-color: lightgrey;
   border-radius: 5px;
   height: 300px;
@@ -102,11 +214,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.clueWord {
-  margin-left:10px;
-  margin-right:10px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
 }
 
@@ -122,16 +231,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-
 .flyButtons {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   height: 10%;
   width: 40%;
-  margin-top: 200px;
-} 
-
+}
 
 .city {
   font-size: 20px;
@@ -152,15 +258,12 @@ button {
   font-family: "Roboto", sans-serif;
 }
 
- .buttons {
+.buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  position: absolute;
-  top: 70%;
   width: 50%;
 }
-
 
 .finger,
 .plane {
@@ -181,7 +284,8 @@ button {
   position: absolute;
   display: flex;
   flex-direction: column;
-  /* height: 250px; */
+  top: 10%;
+  /* bottom: 50%; */
 }
 
 .wrong {
@@ -201,7 +305,6 @@ button {
   color: white;
   margin: 0;
   text-align: center;
-  display: block;
 }
 .clock {
   font-size: 60px;
@@ -229,7 +332,7 @@ button {
 .icons {
   display: flex;
   justify-content: space-around;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 90%;
   height: 70px;
   margin-top: 125px;
@@ -249,17 +352,13 @@ button {
   align-items: center;
 }
 
-
 .flagClue {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-
 @media only screen and (min-width: 1024px) {
-
   .buttons {
     display: flex;
     flex-direction: row;
@@ -289,23 +388,11 @@ button {
   }
 
   .thetime {
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-direction: row-reverse;
     top: 0%;
-    right: 12%;
-
-  }
-  .thetimeFly {
-    position: fixed;
-    display: flex;
-    flex-direction: row-reverse;
-    top: 0%;
-    right: 0%;
-  }
-
-  .mobileTime {
-    display: none;
+    right: 10%;
   }
 
   .clock,
@@ -314,69 +401,20 @@ button {
     margin: 0;
     text-align: center;
     margin-right: 10px;
-  }
-
-  .clock {
     font-size: 1em;
-    font-family: "Times New Roman", Times, serif;
-  }
-
-  .date {
-    font-size: 1em;
-    font-family: "Times New Roman", Times, serif;
-  }
-
-  /* .clueOneScreen {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-  } */
-
-  .clueDiv {
-    background-color: lightgrey;
-    border-radius: 5px;
-    height: 300px;
-    width: 400px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .clueDiv img {
-    height: 200px;
-  }
-  
-  .flyOut {
-    background-color: lightgrey;
-    border-radius: 5px;
-    height: 500px;
-    width: 400px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
     font-family: "Roboto", sans-serif;
-    /* margin-top: 200px; */
   }
-  
 
+  .mobileTime {
+    display: none;
+  }
   .flag {
     width: 200%;
-    height: 100%;
+    /* height: 100%; */
   }
-
 
     /* desktop styling------------------------------------ */
   
-    /* section {
-        width: 100vw;
-        height: 100vh;
-    } */
     .background-image {
         height: 100vh;
         width: 100vw;
@@ -412,86 +450,8 @@ button {
 
   /* desktop styling------------------------------------ */
 
-  /* section {
-    height: 200%;
-  } */
 
 
-  /* desktop styling------------------------------------ */
-
-  section {
-    width: 100%;
-    height: 100%;
-  }
-
-  .background-image {
-    height: 100vh;
-    width: 100vw;
-    background: no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /* background-repeat: no-repeat;
-        background-size: contain; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-/* 
-  .clueDiv,
-  .flyOut {
-    background-color: white;
-    opacity: 0.8;
-    border-radius: 20px;
-    height: 600px;
-    width: 800px;
-    display: flex !important;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    font-family: "Roboto", sans-serif;
-    margin-top: 200px;
-  } */
-
-  .clueDiv {
-    background-color: lightgrey;
-    border-radius: 5px;
-    height: 300px;
-    width: 400px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-  }
- 
-  .clueDiv img {
-    height: 200px;
-  }
- 
-  .flyOut {
-    background-color: lightgrey;
-    border-radius: 5px;
-    height: 500px;
-    width: 400px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    font-family: "Roboto", sans-serif;
-    /* margin-top: 200px; */
-  }
-
-  .city {
-    font-size: 30px;
-    margin-bottom: 0px;
-  }
-
-  /* desktop styling------------------------------------ */
-
-  
   .background-image {
     height: 100vh;
     width: 100vw;
@@ -502,20 +462,6 @@ button {
     align-items: center;
   }
 
-  /* .clueDiv,
-  .flyOut {
-    background-color: white;
-    border-radius: 5px;
-    height: 600px;
-    width: 800px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    font-family: "Roboto", sans-serif;
-    margin-top: 200px;
-  } */
-
 
   .material-icons {
     width: 10%;
@@ -525,26 +471,15 @@ button {
     align-items: center;
     border-radius: 5px;
   }
-
   .wrong {
     border-radius: 5px;
-
-
-    background-color: lightgrey;
-    border-radius: 5px;
-    height: 600px;
-    width: 800px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    font-family: "Roboto Slab", serif;
-
-    height: 110vh;
-    width: 100vw;
-    background:url(https://i2.wp.com/www.kalusalonandspa.com/wp-content/uploads/2017/01/black-brick-background-kalu-salon-black-friday-sales-web.jpg);
+    align-items: center;
+    height: 100vh;
+    width: 65vw;
+    background-color: black;
     color: white;
-
   }
 
   body {
@@ -602,6 +537,7 @@ button {
     height: 85vh;
     padding: 25px;
     position: absolute;
+    /* right: ; */
     text-align: right;
     z-index: -1;
     width: 100%;
@@ -619,6 +555,14 @@ button {
     position: absolute;
     text-align: center;
     transform: translatex(-50%);
+  }
+  .iTunesImage {
+    width: 150%;
+    height: 90%;
+    background-image: url("./assets/itunes.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
   }
   footer:before {
     background: linear-gradient(
@@ -655,6 +599,7 @@ button {
     transform-origin: bottom center;
     transition: transform 2s;
   }
+
 
   footer li:before {
     background: rgba(0, 0, 0, 0.3);
@@ -702,7 +647,19 @@ button {
     width: 3em;
   }
 
-
+  footer img  {
+-webkit-box-reflect: below -5px -webkit-gradient(linear, left bottom, left top, color-stop(0%,rgba(230,230,230,0.2)), color-stop(100%,rgba(255,255,255,0)));
+align-items: center;
+bottom: 0;
+display: flex;
+justify-content: center;
+margin: 0 5px;
+position: relative;
+transform: scale(1);
+transform-origin: bottom center!important;
+transition: all 0.2s;
+  width: 3em;
+}
 
 /* footer img:hover  {
 margin: 0 10px;
@@ -711,35 +668,6 @@ transform: scale(1.5);
 footer img .clueIcon:hover  {
   margin: 0 10px;
   transform: scale(1.5);
-  }
-  footer img {
-    -webkit-box-reflect: below -5px -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0%, rgba(230, 230, 230, 0.2)),
-        color-stop(100%, rgba(255, 255, 255, 0))
-      );
-    align-items: center;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    margin: 0 5px;
-    position: relative;
-    transform: scale(1);
-    transform-origin: bottom center !important;
-    transition: all 0.2s;
-    width: 3em;
-  }
-
-  footer img:hover {
-    margin: 0 10px;
-    transform: scale(1.5);
-  }
-  footer img .clueIcon:hover {
-    margin: 0 10px;
-    transform: scale(1.5);
-
   }
 
   footer img:hover {
@@ -760,4 +688,3 @@ footer img .clueIcon:hover  {
     }
   }
 }
-

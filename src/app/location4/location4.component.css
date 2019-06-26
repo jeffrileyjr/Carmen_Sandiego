@@ -5,14 +5,12 @@ body {
   height: 100vh;
   width: 100vw;
 }
-
 .page {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
 }
-
 .captured {
   font-size: 30px;
   font-family: "Bangers", cursive;
@@ -22,33 +20,23 @@ body {
   align-items: center;
   width: 100%;
 }
-
-
 .images {
   margin-bottom: 50px;
 }
-
 p {
   margin: 5px;
   color: white;
 }
-
-
 img {
   display: flex;
   align-items: center;
 }
-
 #under {
-
   position: absolute;
-
 }
-
 #top {
   width: 450px;
 }
-
 button {
   font-family: 'Roboto Slab', serif;
   font-size: 15px;
@@ -59,20 +47,16 @@ button {
   opacity: 0.7;
   background-color: white;
 }
-
 @media only screen and (min-width: 1024px) { 
-
   .captured {
     font-size: 40px;
     margin-left: 80%;
     margin-top: 0px;
   }
-
   #under {
     left: 15%;
     top: 28%
   }
-
   #top {
     left: 15%;
     top: 28%;

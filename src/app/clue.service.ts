@@ -82,7 +82,7 @@ setLoc1Clues() {
     // console.log(this.clues);
   });
   this.pexelService.getLocationPhoto(this.secondCity).subscribe(response => {
-    this.background2 = response[`photos`][`${this.randomPhoto}`].src.original;
+    this.background2 = response[`photos`][`${this.randomPhoto}`].src.large2x;
     console.log(this.background2);
     this.loc1Clues.push({ photo: response[`photos`][`${this.randomPhoto}`].src.medium });
    });
@@ -94,7 +94,7 @@ setLoc2Clues() {
     // console.log(this.clues);
   });
   this.pexelService.getLocationPhoto(this.thirdCity).subscribe(response => {
-    this.background3 = response[`photos`][`${this.randomPhoto}`].src.original;
+    this.background3 = response[`photos`][`${this.randomPhoto}`].src.large2x;
     this.loc2Clues.push({ photo: response[`photos`][`${this.randomPhoto}`].src.medium });
    });
 }
@@ -105,7 +105,7 @@ setLoc3Clues() {
     // console.log(this.clues);
   });
   this.pexelService.getLocationPhoto(this.location4).subscribe(response => {
-    this.loc3Clues.push({ photo: response[`photos`][0].src.small });
+    this.loc3Clues.push({ photo: response[`photos`][0].src.medium });
    });
 }
 

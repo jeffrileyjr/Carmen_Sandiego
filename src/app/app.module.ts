@@ -7,7 +7,6 @@ import { Location1Component } from './location1/location1.component';
 import { Location2Component } from './location2/location2.component';
 import { Location3Component } from './location3/location3.component';
 import { Location4Component } from './location4/location4.component';
-import { ApiService } from './api.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router'
@@ -51,7 +50,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
   ],
 
-  providers: [ApiService,ClockService],
+  providers: [ClockService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

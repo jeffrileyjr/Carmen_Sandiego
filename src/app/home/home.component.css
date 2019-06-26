@@ -1,60 +1,53 @@
-
 body {
-    background: url(https://i2.wp.com/www.kalusalonandspa.com/wp-content/uploads/2017/01/black-brick-background-kalu-salon-black-friday-sales-web.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
+  background: url(https://i2.wp.com/www.kalusalonandspa.com/wp-content/uploads/2017/01/black-brick-background-kalu-salon-black-friday-sales-web.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
-
-  .acme {
-    font-family: 'Bangers', cursive;
-    font-size: 40px;
-  }
-
-  .email {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: lightgrey;
-    border-radius: 8px;
-    width: 90%;
-    height: 60%;
-    font-family: 'Roboto Slab', serif;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  button {
-    font-family: 'Bangers', cursive;
-    font-size: 20px;
-    height:5%;
-    width: 35%;
-    border-radius: 8px;
-    text-align: center;
-    margin-bottom: 3%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .directions, p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 25px 0px 25px;
-    text-align: center;
-    opacity: 0.7;
-  }
-
-  @media only screen and (min-width: 1024px) {
-
-  .email {
-    width: 50%;
-    height: 50%;
-  }
+.acme {
+  font-family: 'Bangers', cursive;
+  font-size: 40px;
+}
+.email {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: lightgrey;
+  border-radius: 8px;
+  width: 90%;
+  height: 60%;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  text-align: center;
+}
+button {
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+  height:5%;
+  width: 35%;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.directions, p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 25px 0px 25px;
+  text-align: center;
+  opacity: 0.7;
+}
+@media only screen and (min-width: 1024px) {
+.email {
+  width: 50%;
+  height: 50%;
+}
 }

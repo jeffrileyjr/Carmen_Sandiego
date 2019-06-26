@@ -11,7 +11,7 @@ import { UserService} from '../user.service';
 export class Location2Component implements OnInit {
 
 userName: string;
-  clueNumber = -2;  // variable that is used for ngIfs to only show one pop-up message/clue at a time
+  clueNumber = -3;  // variable that is used for ngIfs to only show one pop-up message/clue at a time
   time; // for timer, hold the remaining time.
   clues;  // array to hold our clues
   tempClueNumber = 0;  // variable used in flyOut and goBack to save clue number so you can return to it from fly out page
@@ -28,9 +28,14 @@ userName: string;
   wrong = false;
   selectedCity;
   backgroundNoise;
+  carmenText = false;
 
 
   constructor(private userService: UserService, private clueService: ClueService, private pexelService: PexelApiService, private clockService: ClockService) { }
+  showCarmenText() {
+    this.clueNumber++;
+    this.carmenText = !this.carmenText;
+  }
   // method that increases clueNumber so we can show the next clue
   showClue() {
     this.clueNumber = 0;

@@ -8,23 +8,20 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  font-family: 'Bangers', cursive;
-}
-
-.all {
+  font-family: ‘Bangers’, cursive;
+ }
+ .all {
   width: 90%;
-}
-
-h3 {
+ }
+ h3 {
   color: red;
   display: flex;
   font-size: 50px;
   justify-content: center;
   align-items: center;
   margin-bottom: 5px;
-}
-
-p {
+ }
+ p {
   font-size: 30px;
   color: white;
   display: flex;
@@ -32,16 +29,14 @@ p {
   align-items: center;
   text-align: center;
   padding: 10px;
-}
-
-.gif {
+ }
+ .gif {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 90%;
-}
-
-button {
+ }
+ button {
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -50,7 +45,8 @@ button {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 40%;
   height: 30%;
-  font-family: 'Bangers', cursive;
+  font-family: ‘Bangers’, cursive;
   margin-top: 35px;
   font-size: 20px;
-}
+ }
+ 

@@ -1,165 +1,140 @@
 .home {
-    background: url(https://i2.wp.com/www.kalusalonandspa.com/wp-content/uploads/2017/01/black-brick-background-kalu-salon-black-friday-sales-web.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-p {
+  background: url(https://i2.wp.com/www.kalusalonandspa.com/wp-content/uploads/2017/01/black-brick-background-kalu-salon-black-friday-sales-web.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
-
-
+p {
+display: flex;
+flex-direction: column;
+text-align: center;
+}
 img {
-    height: 500px;
-    width: 500px;
+  height: 500px;
+  width: 500px;
 }
-
 button {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    height: 5%;
-    width: 30%;
-    border-radius: 5px;
-    margin-top: 2%;
-    opacity: 0.7;
-    /* background-color: white; */
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  height: 5%;
+  width: 30%;
+  border-radius: 5px;
+  margin-top: 2%;
+  opacity: 0.7;
+  /* background-color: white; */
 }
-
 .agentForm {
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    background-color: lightgray;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 40%;
-    width: 90%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  background-color: lightgray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .acme {
-    font-family: 'Roboto Slab', serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 0px;
-    margin-top:0px;
-    font-size: 20px;
-}
-
-.newCase {
-  font-family: 'Bangers', cursive;
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 0px;
+  margin-top:0px;
   font-size: 20px;
 }
-
-.welcome {
-    font-size: 30px;
-    margin-top: 0px;
-    font-family: 'Bangers', cursive;
+.newCase {
+font-family: 'Bangers', cursive;
+font-size: 20px;
 }
-
-.beginCase {
-    font-family: 'Bangers', cursive;
-    height: 40%;
-    width: 90%;
-    border-radius: 5px;
-    border: none;
-    opacity: .8;
-    font-size: 18px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto Slab', serif;
-}
-
-.enterName {
-    margin-top: 0;
-    font-size: 20px;
-    font-family: 'Roboto Slab', serif;
-    padding: 10px;
-}
-
-input {
-    width: 150%;
-    border-radius: 5px;
-    height: 30px;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@media only screen and (min-width: 1024px) {
-
-  .newCase {
-    font-family: 'Bangers', cursive;
-    font-size: 25px;
-  }
-
-  .enterName {
-    margin-top: 0;
-    font-size: 20px;
-    font-family: 'Roboto Slab', serif;
-}
-
 .welcome {
   font-size: 30px;
   margin-top: 0px;
   font-family: 'Bangers', cursive;
 }
-
+.beginCase {
+  font-family: 'Bangers', cursive;
+  height: 40%;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+  opacity: .8;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .form {
-  margin-top: 30px
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Slab', serif;
 }
-
+.enterName {
+  margin-top: 0;
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+  padding: 10px;
+}
+input {
+  width: 150%;
+  border-radius: 5px;
+  height: 30px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media only screen and (min-width: 1024px) {
+.newCase {
+  font-family: 'Bangers', cursive;
+  font-size: 25px;
+}
+.enterName {
+  margin-top: 0;
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+}
+.welcome {
+font-size: 30px;
+margin-top: 0px;
+font-family: 'Bangers', cursive;
+}
+.form {
+margin-top: 30px
+}
 .agentForm {
-  height: 50%;
-  width: 50%;
+height: 50%;
+width: 50%;
 }
-
 #spotlight {
-  position: fixed;
-  animation: bottom-right 4s ease-in-out alternate infinite;
-  border-bottom: none;
-  border-left: solid 30vh transparent;
-  border-right: solid 30vh transparent;
-  border-bottom: solid 200vh rgba(255, 255, 255, .5);
-  transform-origin: top;
-  pointer-events: none;
-
+position: fixed;
+animation: bottom-right 4s ease-in-out alternate infinite;
+border-bottom: none;
+border-left: solid 30vh transparent;
+border-right: solid 30vh transparent;
+border-bottom: solid 200vh rgba(255, 255, 255, .5);
+transform-origin: top;
+pointer-events: none;
 }
-
 #spotlight {
-  animation: bottom-left 4s ease-in-out alternate infinite;
-  left: auto;
-  right: 0;
+animation: bottom-left 4s ease-in-out alternate infinite;
+left: auto;
+right: 0;
 }
-
 @keyframes bottom-left {
-  0% {
-    transform: rotate(-30deg);
-  }
-
-  100% {
-    transform: rotate(30deg);
-  }
+0% {
+  transform: rotate(-30deg);
 }
-
-
+100% {
+  transform: rotate(30deg);
+}
+}
 }
