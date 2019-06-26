@@ -70,7 +70,7 @@ insert into stolenGoods (city, stolenGood)
 VALUES ('Moscow', 'We have just been alerted that Carmen Sandiego has stolen the Kremlin from Moscow, Russia.');
 
 insert into stolenGoods (city, stolenGood)
-VALUES ('Dubai', 'We have just been alerted that Carmen Sandiego has stolen the Palm Islands from Dubai.');
+VALUES ('Dubai', 'We have just been alerted that Carmen Sandiego has stolen the Palm Islands in Dubai.');
 
 insert into stolenGoods (city, stolenGood)
 VALUES ('Dubai', 'We have just been informed that Carmen Sandiego has stolen the Burj Khalifa from Dubai.');
@@ -91,7 +91,7 @@ insert into stolenGoods (city, stolenGood)
 VALUES ('Berlin', 'We have just been informed that Carmen Sandiego has stolen the Brandenburg Gate in Berlin.');
 
 insert into stolenGoods (city, stolenGood)
-VALUES ('Berlin', 'We have just been alerted that criminal mastermind, Carmen Sandiego has stolen the Checkpoint Charlie from Berlin, Germany.');
+VALUES ('Berlin', 'We have just been alerted that criminal mastermind, Carmen Sandiego has stolen Checkpoint Charlie from Berlin, Germany.');
 
 insert into stolenGoods (city, stolenGood)
 VALUES ('Tokyo', 'We have just been alerted that criminal mastermind, Carmen Sandiego has stolen the Tokyo Skytree.');
@@ -103,5 +103,5 @@ insert into stolenGoods (city, stolenGood)
 VALUES ('Sydney', 'We have just been informed Carmen Sandiego has stolen the Sydney Opera House.');
 
 insert into stolenGoods (city, stolenGood)
-VALUES ('Sydney', 'We have just been informed Carmen Sandiego has stolen the Sydney Opera House.');
+VALUES ('Sydney', 'We have just been alerted that criminal mastermind, Carmen Sandiego has stolen Bondi Beach in Sydney, Austrailia.');
 
