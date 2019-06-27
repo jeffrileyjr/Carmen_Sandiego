@@ -20,7 +20,7 @@ body {
   flex-direction: column-reverse;
 }
 .captured{
-font-size: 25px;
+font-size: 20px;
 font-family: "Bangers", cursive;
 display: flex;
 flex-direction: column;
@@ -47,12 +47,8 @@ opacity: 0.7;
 background-color: white;
 }
 @media only screen and (min-width: 1024px) { 
-.page {
-  flex-direction: row-reverse;
-  }
 .captured {
   font-size: 40px;
-  margin-left: 40px;
 }
 .images {
   margin-bottom: 50px;
@@ -69,10 +65,13 @@ img {
   top: 28%
 }
 #top {
-  left: 18%;
-  top: 23%;
+  left: 33%;
+  top: 12%;
   position: absolute;
-  width: 29%;
+  width: 35%;
+}
+button {
+  font-size: 15px;
 }
 button:hover {
   background-color: black;

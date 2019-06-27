@@ -80,7 +80,7 @@ export class Location3Component implements OnInit {
   }
   // increase clueNumber to display next clue
   nextClue() {
-    this.clueNumber++;
+    this.clueNumber = this.clueNumber + 1;
     this.clockService.onClue();
     this.time = this.clockService.getTime();
     this.clockService.isTimeLeft();
