@@ -9,8 +9,8 @@ import { UserService} from '../user.service';
   templateUrl: './location1.component.html',
   styleUrls: ['./location1.component.css']
 })
-export class Location1Component implements OnInit { //defines the logic
- 
+export class Location1Component implements OnInit { // defines the logic
+
   userName: string;
   clueNumber = -2;  // variable that is used for ngIfs to only show one pop-up message/clue at a time
   time; // for timer, hold the remaining time.
@@ -34,17 +34,23 @@ export class Location1Component implements OnInit { //defines the logic
 
   constructor(private userService: UserService, private clueService: ClueService, private pexelService: PexelApiService, private clockService: ClockService) { }
 
-  
-  playTheme(){
+
+  playTheme() {
     this.itunes = !this.itunes;
-    this.theme = new Audio('../../assets/Theme.mp3');
-    this.theme.play();
+    if (this.itunes === true ) {
+      this.theme = new Audio('../../assets/Theme.mp3');
+      this.theme.play();
+    } else {
+      this.itunes = !this.itunes;
+      this.theme.pause();
+    }
+
   }
   stopTheme() {
     this.itunes = !this.itunes;
     this.theme.pause();
   }
-  toggleItunes(){
+  toggleItunes() {
     this.itunes = !this.itunes;
   }
   // method that increases clueNumber so we can show the next clue
@@ -140,7 +146,7 @@ export class Location1Component implements OnInit { //defines the logic
       this.locations = tempArray;
       console.log(this.locations);
     }
-    
+
     this.time = this.clockService.getTime();
     this.timeLeft = this.clockService.getTimeLeft();
     this.userName = this.userService.userName;

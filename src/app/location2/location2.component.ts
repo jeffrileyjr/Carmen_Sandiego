@@ -34,10 +34,16 @@ userName: string;
 
 
   constructor(private userService: UserService, private clueService: ClueService, private pexelService: PexelApiService, private clockService: ClockService) { }
-  playTheme(){
+  playTheme() {
     this.itunes = !this.itunes;
-    this.theme = new Audio('../../assets/Theme.mp3');
-    this.theme.play();
+    if (this.itunes === true ) {
+      this.theme = new Audio('../../assets/Theme.mp3');
+      this.theme.play();
+    } else {
+      this.itunes = !this.itunes;
+      this.theme.pause();
+    }
+
   }
   stopTheme() {
     this.itunes = !this.itunes;
