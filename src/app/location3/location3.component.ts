@@ -57,6 +57,7 @@ export class Location3Component implements OnInit {
   // method that increases clueNumber so we can show the next clue
   showClue() {
     this.clueNumber = 0;
+    console.log(this.clueNumber);
     this.clockService.onClue();
     this.time = this.clockService.getTime();
     this.timeLeft = this.clockService.getTimeLeft();
@@ -81,6 +82,7 @@ export class Location3Component implements OnInit {
   // increase clueNumber to display next clue
   nextClue() {
     this.clueNumber = this.clueNumber + 1;
+    console.log(this.clueNumber);
     this.clockService.onClue();
     this.time = this.clockService.getTime();
     this.clockService.isTimeLeft();

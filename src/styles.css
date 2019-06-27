@@ -62,8 +62,9 @@ body {
   border-radius: 5px;
   position: relative;
   height: 70px;
-  width: 400px;
+  width: 350px;
   display: flex;
+  font-size: 16px;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
@@ -474,6 +475,7 @@ button {
     align-items: center;
     flex-direction: row;
     margin-top: 6px;
+    width: 400px;
     margin-right: 12px;
     position: fixed;
     bottom: 85%;
