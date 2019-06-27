@@ -29,6 +29,9 @@ export class ClueService {
 
   constructor(private http: HttpClient, private router: Router, private pexelService: PexelApiService) { }
 
+  resetID(){
+    this.id = 1;
+  }
   getScores() {
     return this.http.get('/thescores', { responseType: 'json'});
   }

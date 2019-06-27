@@ -144,6 +144,7 @@ export class Location1Component implements OnInit { //defines the logic
     this.time = this.clockService.getTime();
     this.timeLeft = this.clockService.getTimeLeft();
     this.userName = this.userService.userName;
+    this.clueService.resetID();
 
     return this.localClues;
   }
