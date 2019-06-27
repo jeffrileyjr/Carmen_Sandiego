@@ -99,11 +99,12 @@ userName: string;
       this.flight = !this.flight;
       this.wrong = !this.wrong;
       this.clockService.onWrong();
+      this.theme.pause();
       // this.clockService.isTimeLeft();
     } else {
       this.clockService.onFlight();
       this.clueService.rightChoice();
-      this.stopNoise();
+      this.theme.pause();
     }
     console.log(this.selectedCity);
   }

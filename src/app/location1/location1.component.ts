@@ -30,6 +30,7 @@ export class Location1Component implements OnInit { // defines the logic
   backgroundNoise;
   itunes = false;
   theme = new Audio('../../assets/Theme.mp3');
+  otherImage;
 
 
   constructor(private userService: UserService, private clueService: ClueService, private pexelService: PexelApiService, private clockService: ClockService) { }
@@ -149,6 +150,7 @@ export class Location1Component implements OnInit { // defines the logic
     this.timeLeft = this.clockService.getTimeLeft();
     this.userName = this.userService.userName;
     this.clueService.resetID();
+    this.otherImage = '../../assets/itunes.png';
 
     return this.localClues;
   }
