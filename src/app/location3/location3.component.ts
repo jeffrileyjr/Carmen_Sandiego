@@ -49,9 +49,9 @@ export class Location3Component implements OnInit {
     this.itunes = !this.itunes;
     this.theme.pause();
   }
-  // toggleItunes(){
-  //   this.itunes = !this.itunes;
-  // }
+  toggleItunes(){
+    this.itunes = !this.itunes;
+  }
   showCarmenText() {
     this.clueNumber++;
     this.carmenText = !this.carmenText;
