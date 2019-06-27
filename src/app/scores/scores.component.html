@@ -1,23 +1,20 @@
-<section class="background"> 
-<div>
-  <h1>Top Gumshoes</h1>
-</div>
-
-  <section class="topTen">
-    <table> 
-      <div>
-      <th>Rank</th>
-      <th>Name</th>
-      <th>Score</th>
-    </div>
-    <div class="scores" *ngFor="let score of topTen; index as i">
-      <td> {{i+1}} </td>
-      <td> {{score.username}} </td>
-      <td> {{score.score}}  </td>
-    </div>
-
-    </table>
- <button type="button" class="beginNewCase" routerLink="/landing-page" routerLinkActive="active">
-   Play Again</button>
-  </section>
-</section>
+<body>
+    <section class=“topTen”>
+      <p class="top">Top Gumshoes</p>
+      <table>
+      <div class="table">
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Solve Time</th>
+      </div>
+        <div class="scores" *ngFor="let score of topTen; index as i">
+        <td> {{i+1}} </td>
+        <td> {{score.username}} </td>
+        <td> {{score.score}}  </td>
+      </div>
+   
+     </table>
+       <button class="beginNewCase" routerLink="/landing-page" routerLinkActive="active">Play Again</button>
+   </section>
+   
+   </body>

@@ -42,8 +42,7 @@ export class Location1Component implements OnInit { // defines the logic
       this.theme = new Audio('../../assets/Theme.mp3');
       this.theme.play();
     } else {
-      this.itunes = !this.itunes;
-      this.theme.pause();
+      this.stopTheme();
     }
 
   }
