@@ -95,7 +95,7 @@
         
                   </div>
                 </div>
-            <div *ngIf="clueNumber === -2" class="" (click)="showClue(); showCarmenText()">
+            <div *ngIf="clueNumber === -2" class="" (click)="showCarmenText(); showClue()">
               <div class="thetime" class="mobileTime">
                 <p class="clock"> {{ time | date: 'shortTime'}} </p>
                 <p class="date">{{ time | date}} </p>
