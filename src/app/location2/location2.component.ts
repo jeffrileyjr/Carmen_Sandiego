@@ -82,7 +82,7 @@ userName: string;
   }
   // increase clueNumber to display next clue
   nextClue() {
-    this.clueNumber++;
+    this.clueNumber = this.clueNumber + 1;
     console.log(this.clueNumber);
     this.clockService.onClue();
     this.time = this.clockService.getTime();
