@@ -53,7 +53,7 @@
   
     <!-- desktop top---------------------------------------------- -->
   
-    <section class="background-image" [ngStyle]="{'background-image': photoURL === null ? 'url(../../assets/itunes.png)' : 'url('+ photoURL+')'}">
+    <section class="background-image" [ngStyle]="{'background-image': photoURL === null ? 'url('+ backupImage+')' : 'url('+ photoURL+')'}">
 
           <div class="iTunesImage" *ngIf="itunes" (click)="stopTheme()">
           
