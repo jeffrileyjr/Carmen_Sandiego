@@ -50,9 +50,7 @@ export class Location1Component implements OnInit { // defines the logic
     this.itunes = !this.itunes;
     this.theme.pause();
   }
-  toggleItunes() {
-    this.itunes = !this.itunes;
-  }
+
   // method that increases clueNumber so we can show the next clue
   showClue() {
     this.clueNumber = 0;

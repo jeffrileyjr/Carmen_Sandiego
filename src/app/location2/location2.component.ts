@@ -49,9 +49,7 @@ userName: string;
     this.itunes = !this.itunes;
     this.theme.pause();
   }
-  toggleItunes(){
-    this.itunes = !this.itunes;
-  }
+
   showCarmenText() {
     this.clueNumber++;
     this.carmenText = !this.carmenText;
