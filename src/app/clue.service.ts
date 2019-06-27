@@ -11,7 +11,7 @@ export class ClueService {
   locations = ['Paris', 'Moscow', 'Dubai', 'Beijing', 'London', 'Berlin', 'Tokyo', 'Sydney'];
   location4 = 'Detroit';
   location4redHerring = 'Cleveland';
-  randomPhoto: number = Math.floor((Math.random() * 5));
+  randomPhoto: number = Math.floor((Math.random() * 15));
   redHerring = ['Cannes', 'Sochi', 'Abu Dhabi', 'Shanghai', 'Liverpool', 'Munich', 'Kyoto', 'Perth'];
   redHerrings = [];
   wrongLocations = ['Madrid', 'Hong Kong', 'Washington, DC', 'New York', 'Dublin', 'Rome', 'Warsaw', 'Lisbon', 'Mexico City'];

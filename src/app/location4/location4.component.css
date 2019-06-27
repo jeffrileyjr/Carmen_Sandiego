@@ -20,7 +20,7 @@ body {
   flex-direction: column-reverse;
 }
 .captured{
-font-size: 20px;
+font-size: 25px;
 font-family: "Bangers", cursive;
 display: flex;
 flex-direction: column;
